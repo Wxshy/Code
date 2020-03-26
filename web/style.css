@@ -1,0 +1,22 @@
+body{
+    background-color: pink;
+}
+button {
+    background-color: powderblue;
+    font-family: Arial;
+    padding: 14px 16px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    left: 47%;
+}
+
+button:hover{
+    background-color: palegreen;
+}
+
+h2{
+    text-align: center;
+    font-size: 48px;
+}
+

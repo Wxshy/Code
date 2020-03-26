@@ -1,0 +1,25 @@
+body{
+    background-image: url("hockey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    color: whitesmoke;
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.5);
+}
+
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 14px 16px;
+    float: left;
+}
