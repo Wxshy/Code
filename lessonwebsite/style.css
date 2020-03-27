@@ -4,22 +4,37 @@ body{
     background-size: cover;
 }
 
-a{
-    color: whitesmoke;
-}
-
 .navbar{
     background-color: rgba(0,0,0,0.5);
 }
 
-ul{
-
+.navbar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-li{
-    padding: 14px 16px;
-    float: left;
+.navbar li{
+    float: left; 
 }
+
+.navbar li a{ 
+    display: block;
+    padding: 24px 100px;
+    color: white;
+}
+
+.navbar li a:hover{
+    background-color: rgba(40,40,40,0.7);
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-family: 'Cantarell';
+    font-size: 120px;
+    opacity: 40%;
+    padding: 120px 0px;
+}
+
