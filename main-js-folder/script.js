@@ -45,14 +45,12 @@ function plotData(){
 
 
 function todolist(){
-    return {
-
-    first(){
+    function first(){
         window.open("todolist.html")
-    },
-    submit(){
+    }
+    function submit(){
         var userinput = document.getElementById('myInput').value;
         console.log(userinput);
     }
-    }
+    return{first, submit};    
 }
