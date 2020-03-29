@@ -2,10 +2,19 @@ body{
     background-image: url("hockey.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+
 }
 
-.navbar{
-    background-color: rgba(0,0,0,0.5);
+.navbar {
+    background-color: rgba(245, 245, 245, 0.7);
+    font-family: 'Raleway', 'sans-serif';
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    display:none;
 }
 
 .navbar ul{
@@ -21,20 +30,69 @@ body{
 
 .navbar li a{ 
     display: block;
-    padding: 24px 100px;
-    color: white;
+    padding: 24px 112px;
+    color: black;
+    text-decoration: none;
 }
 
 .navbar li a:hover{
-    background-color: rgba(40,40,40,0.7);
+    background-color: whitesmoke;
+    color: black;  
 }
+
+
+
 
 h1 {
     text-align: center;
-    color: red;
-    font-family: 'Cantarell';
+    color: whitesmoke;
+    font-family: 'Raleway', 'sans-serif';
     font-size: 120px;
-    opacity: 40%;
+    opacity: 80%;
     padding: 120px 0px;
 }
 
+.welcome{
+    display:table;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px ;
+}
+
+.right{
+    display: table-cell;
+    text-align: center;
+    padding: 0px;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.left {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: gray;
+    display: table-cell;
+    text-align: center;
+    padding: 90px;
+}
+
+button{
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: larger;
+    font-family: 'Raleway', 'sans-serif';
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 1435px;
+    display: block;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body{
+    -ms-overflow-style: none;
+}
