@@ -7,14 +7,15 @@ body{
 
 }
 
+
+
 .navbar {
-    background-color: rgba(245, 245, 245, 0.7);
     font-family: 'Raleway', 'sans-serif';
     position: fixed;
     top: 0;
     z-index: 9999;
     width: 100%;
-    display:none;
+    display:block;
 }
 
 .navbar ul{
@@ -30,15 +31,15 @@ body{
 
 .navbar li a{ 
     display: block;
-    padding: 24px 112px;
-    color: black;
+    padding: 24px 114.3px;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 .navbar li a:hover{
-    background-color: whitesmoke;
-    color: black;  
+    background-color: rgba(245,245,245,0.3);
 }
+
 
 
 
@@ -52,40 +53,7 @@ h1 {
     padding: 120px 0px;
 }
 
-.welcome{
-    display:table;
-    background-color: whitesmoke;
-    width: 100%;
-    padding: 10px ;
-}
 
-.right{
-    display: table-cell;
-    text-align: center;
-    padding: 0px;
-    font-family: 'Roboto', 'sans-serif';
-}
-
-.left {
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: gray;
-    display: table-cell;
-    text-align: center;
-    padding: 90px;
-}
-
-button{
-    background: none;
-    border: none;
-    color: whitesmoke;
-    font-size: larger;
-    font-family: 'Raleway', 'sans-serif';
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 1435px;
-    display: block;
-}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
