@@ -54,3 +54,72 @@ function todolist(){
     }
     return{first, submit};    
 }
+
+function dbtest(){
+    var mysql = require('mysql');
+
+    var con = mysql.createConnection({
+    host: "localhost",
+    user: "yourusername",
+    password: "yourpassword"
+    });
+
+    con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    });
+}
+
+function getbg(){
+    var url = document.body.style.backgroundImage;
+    console.log(url);
+}
+
+function pagerank(){
+    var ia = 1;
+    var ib = 1;
+    var ic = 1;
+    var id = 1;
+    var ta = 2;
+    var tb = 1;
+    var tc = 1;
+    
+    var ap = [1];
+    var bp = [1];
+    var cp = [1];
+    var dp = [1];
+    
+    function calc(iv, con){
+        return ((iv * 0.85) / con)
+    }
+
+    for (var i; i < 10;i++){
+        var av = [];
+        var bv = [];
+        var cv = [];
+        var dv = [];
+        av.append(calc(ic, tc));
+        bv.append(calc(ia, ta));
+
+        cv.append(calc(ia, ta));
+        cv.append(calc(ib, tb));
+        cv.append(calc(idd, td));
+
+        ia = sum(av) + 0.15;
+        ib = sum(bv) + 0.15;
+        ic = sum(cv) + 0.15;
+        id = sum(dv) + 0.15;
+
+        ap.append(ia);
+        bp.append(ib);
+        cp.append(ic);
+        dp.append(id);
+    }
+
+    console.log(ia,ib,ic,id)
+
+    Plotly.plot('chart',[{
+        y:ap,
+        type: 'line'   
+    }])
+}

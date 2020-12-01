@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(85, 202, 248);
+    background-image: url('j1.jpg');
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
 }
 
 h1{
