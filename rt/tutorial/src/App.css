@@ -1,0 +1,264 @@
+body {
+  background: #171622;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+nav {
+  background: rgba(49, 36, 64, 0.2);
+  width: 57.6px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+nav ul {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  list-style-type: none;
+  margin: 0;
+  padding-left: 25%;
+  overflow: hidden;
+}
+
+nav li {
+  position: relative;
+  padding-top: 3.5vh;
+  padding-bottom: 3.5vh;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.5s;
+}
+
+nav li a img {
+  display: inline;
+  height: 30px;
+  width: 30px;
+}
+
+.navtext {
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 30px;
+  float: right;
+  display: none;
+  color: whitesmoke;
+  transition-duration: 100s;
+}
+
+nav:hover, nav:focus {
+  width: 40vh;
+  background: rgba(49, 36, 64);
+  opacity: 0.9;
+}
+
+nav:hover ul, nav:focus ul {
+  padding-left: 10%;
+}
+
+nav:hover .navtext, nav:focus .navtext {
+  display: inline;
+  padding-left: 40px;
+}
+
+nav li:hover, nav li:focus{
+  cursor: pointer;
+  background-color: rgba(208, 245, 245, 0.3);
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family: 'Raleway', 'sans-serif';
+  color: whitesmoke;
+  padding-top: 5%;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Raleway', 'sans-serif';
+  color: whitesmoke;
+  padding: 5%;
+}
+
+h3 a{
+  text-decoration:none;
+  color: whitesmoke;
+  
+}
+
+p {
+  font-family: 'Raleway', 'sans-serif';
+  color: whitesmoke;
+  padding: 8%;
+  text-align: center;
+}
+
+#about-image {
+  padding: 10%;
+  padding-top: 5%;
+  height: 30%;
+  width: 30%;
+  float: right;
+}
+
+#uc{
+  padding: 100px;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+
+/* Hide scrollbar for IE and Edge */
+
+body {
+  -ms-overflow-style: none;
+}
+#sm-logo{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 100px;
+  padding-left: 20px;
+  font-family: 'Raleway', 'sans-serif';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: 0.7s;
+}
+
+#lg-logo {
+  display: inline;
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 2s;
+  stroke-linecap: square;
+  height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  #lg-logo{
+     display:none;
+  }
+
+  #sm-logo{
+     display:inline-block;
+  }
+}
+
+#lg-logo path:nth-child(1) {
+  stroke-dasharray: 435;
+  stroke-dashoffset: 435;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(2) {
+  stroke-dasharray: 407;
+  stroke-dashoffset: 407;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(3) {
+  stroke-dasharray: 577;
+  stroke-dashoffset: 577;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(4) {
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(5) {
+  stroke-dasharray: 405;
+  stroke-dashoffset: 405;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(6) {
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(7) {
+  stroke-dasharray: 777;
+  stroke-dashoffset: 777;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(8) {
+  stroke-dasharray: 407;
+  stroke-dashoffset: 407;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(9) {
+  stroke-dasharray: 322;
+  stroke-dashoffset: 322;
+  animation: line-anim 2s ease forwards;
+}
+
+#lg-logo path:nth-child(10) {
+  stroke-dasharray: 433;
+  stroke-dashoffset: 433;
+  animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+      fill: transparent;
+  }
+  to {
+      fill: #C5C6C7;
+  }
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(233, 192, 88) 50%, rgb(208, 78, 78) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(-25%);
+  }
+  100% {
+      transform: translateX(25%);
+  }
+}

@@ -18,17 +18,19 @@ while True:
 
     img = frame
     grey = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = faceCascade.detectMultiScale(frame, scaleFactor = 1.05, minNeighbors=5)
-    for x,y,w,h in faces:
-        img = cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0), 3)
-        if key == ord('a'):
-            pic(img)
-        rndm = str('AGE: ' + str(random.randint(1,100)) + 'YEARS')
-        cv2.putText(img, rndm, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,255,0), 3)
-
-    cv2.imshow('Capturing', img)
-
     
+    grey = cv2.GaussianBlur(grey, (21,21), 0)
+
+    try:
+        frameDelta = cv2.absdiff(prev_frame, grey)
+    except Exception:
+        pass
+    
+	thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
+
+    prev_frame = grey
+
+    cv2.imshow('hello', grey)
 
     if key == ord('q'):
         break
@@ -39,4 +41,4 @@ video.release()
 cv2.destroyAllWindows()
 print('Frames Captured:', a)
 print('Time Elapsed:', str(end-start)+'s')
-time.sleep(30)
+
