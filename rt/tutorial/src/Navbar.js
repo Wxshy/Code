@@ -1,4 +1,5 @@
-import './Navbar';
+import './Navbar.css';
+import {Link} from 'react-router-dom';
 import about from './assets/about-icon.png';
 import home from './assets/home-icon.png';
 import code from './assets/code-icon.png';
@@ -10,29 +11,29 @@ function Navbar(){
         <nav onclick="nav_open()" onmouseover="nav_open()" onmouseleave="changesmopacity()">
             <ul>
                 <li>
-                    <a href="/"><img src={home}/>
+                    <Link to="/"><img src={home}/>
                         <div className="navtext">Home</div>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="about.html"><img src={about}/>
+                    <Link to="/about"><img src={about}/>
                         <div className="navtext">About Me</div>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="uc.html"><img src={gallery}/>
-                        <div className="navtext">Galleryy</div>
-                    </a>
+                    <Link to="/gallery"><img src={gallery}/>
+                        <div className="navtext">Gallery</div>
+                    </Link>
                 </li>
                 <li>
-                    <a href="https://github.com/Wxshy"><img src={code}/>
+                    <Link to="/code"><img src={code}/>
                         <div className="navtext">Code</div>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="uc.html"><img src={contact}/>
+                    <Link to="/contact"><img src={contact}/>
                         <div className="navtext">Contact Me</div>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>
