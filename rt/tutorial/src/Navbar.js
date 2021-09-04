@@ -11,27 +11,27 @@ function Navbar(){
         <nav onclick="nav_open()" onmouseover="nav_open()" onmouseleave="changesmopacity()">
             <ul>
                 <li>
-                    <Link to="/"><img src={home}/>
+                    <Link to="/"><img src={home} alt='Home Icon'/>
                         <div className="navtext">Home</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/about"><img src={about}/>
+                    <Link to="/about"><img src={about} alt='About Icon'/>
                         <div className="navtext">About Me</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/gallery"><img src={gallery}/>
+                    <Link to="/gallery"><img src={gallery} alt='Gallery Icon'/>
                         <div className="navtext">Gallery</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/code"><img src={code}/>
+                    <Link to="/code"><img src={code} alt='Code Icon'/>
                         <div className="navtext">Code</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact"><img src={contact}/>
+                    <Link to="/contact"><img src={contact} alt='Contact Icon'/>
                         <div className="navtext">Contact Me</div>
                     </Link>
                 </li>
