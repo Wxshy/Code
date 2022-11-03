@@ -26,7 +26,7 @@ while True:
     except Exception:
         pass
     
-	thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
+    thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
 
     prev_frame = grey
 

@@ -1,9 +1,5 @@
 import cv2
 
-beach = cv2.imread('C:/Users/samue/Desktop/Code/croyde.jpg')
-print(beach.shape)
-resizedBeach = cv2.resize(beach, (int(beach.shape[0]*2), int(beach.shape[1]*2)))
-
 faceCascade = cv2.CascadeClassifier('C:/Users/samue/Desktop/Code/haarcascade_frontalface_default.xml')
 
 faceimg = cv2.imread('C:/Users/samue/Downloads/20170625_200858000_iOS.jpg')
